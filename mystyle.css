@@ -1,0 +1,103 @@
+ *{
+  padding:0;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+ }
+
+ body{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  background-color: #dce9ff;
+  padding-top: 20px;
+ }
+ 
+ .wrapper{
+  width: 320px;
+  min-height:150px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 8px 5px 10px rgba(0,0,0,0.05);
+  padding: 30px;
+ }
+ 
+ .input-field{
+  width: 100%;
+  height: 48px;
+  padding: 10px;
+  background-color: #eeeeee;
+  color: gray;
+  border: 50px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+ } 
+ 
+ .heading{
+  color: #3B3663;
+  margin-bottom: 20px;
+ }
+ 
+ .heading p{ 
+  color: #AAA8BB;
+ }
+
+ label{
+  color: #AAA8BB;
+  font-weight: 400;
+ }
+ 
+ button{
+  width: 100%;
+  height: 45px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #31285C;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  transition-duration: 0.3s;
+ }
+ 
+ button:hover{
+  background-color: #4646a4;
+ }
+ 
+ .row{
+  min-width: 5px;
+  min-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 15px;
+ }
+ 
+ .custom-checkbox{
+  width: 17px;
+  height: 17px;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  margin-right: 5px;
+ }
+ 
+ input[type=checkbox]:checked ~ .custom-checkbox{
+  background-color: #31285C;
+ }
+ 
+ input[type=checkbox]:checked ~ .custom-checkbox::before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f00c";
+   display: inline-block;
+   font-weight: 700;
+   color: #ffffff;
+ }
